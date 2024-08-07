@@ -33,7 +33,7 @@ jobs:
       - name: Build and push staging images
         uses: docker/build-push-action@v6.6.0
         with:
-          context: .
+          context: ../
           push: true
           tags: ${{  secrets.ACR_NAME }}/contoso-website:latest
           
