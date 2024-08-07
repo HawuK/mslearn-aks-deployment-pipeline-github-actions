@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+          tags: ${{vars.REKISTERI}}/contoso-website:latest
