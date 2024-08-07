@@ -31,9 +31,10 @@ jobs:
           password:  ${{ secrets.ACR_PASSWORD }}
 
       - name: Build and push staging images
-        uses: docker/build-push-action@v5.0.0
+        uses: docker/build-push-action@v6.6.0
         with:
           context: .
           push: true
           tags: ${{  secrets.ACR_NAME }}/contoso-website:latest
+          
           
